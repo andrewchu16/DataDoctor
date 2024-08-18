@@ -4,14 +4,19 @@
     line-height: 1.5;
     font-weight: 400;
 
-    --background: #fcfff7 !important;
+    --white: #fcfff7 !important;
+    --black: #08151f !important;
     --text: #08151f !important;
     --text-gray: #4f5961 !important;
+    --general-box-shadow: #08151f30 0 4px 8px 2px !important;
+    --primary: #64b6ac;
+    --secondary: #bfe0dc;
+    --tertiary: #a8eae2;
 
     font-family: "Open Sans", "Poppins", sans-serif, Inter, system-ui, Avenir,
         Helvetica, Arial;
     color-scheme: light dark;
-    background: var(--background);
+    background: var(--white);
     color: var(--text);
 
     font-synthesis: none;
@@ -22,4 +27,8 @@
 
 .material-symbols-outlined {
     user-select: none;
+}
+
+.constrainer {
+    padding: 0 30px;
 }

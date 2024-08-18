@@ -19,17 +19,19 @@ createRoot(document.getElementById("root")!).render(
         />
         <BrowserRouter>
             <AuthProvider>
-                <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/sign-up" element={<SignUp />} />
-                    <Route element={<PrivateRoute />}>
+                <div className="constrainer">
+                    <Routes>
+                        <Route path="/" element={<LandingPage />} />
+                        <Route path="/sign-up" element={<SignUp />} />
+                        {/* <Route element={<PrivateRoute />}> */}
                         <Route element={<Layout />}>
                             <Route path="/home" element={<Home />} />
                             <Route path="/profile" element={<Profile />} />
                         </Route>
-                    </Route>
-                    <Route path="*" element={<PageNotFound />} />
-                </Routes>
+                        {/* </Route> */}
+                        <Route path="*" element={<PageNotFound />} />
+                    </Routes>
+                </div>
             </AuthProvider>
         </BrowserRouter>
     </StrictMode>
