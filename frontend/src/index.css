@@ -4,6 +4,7 @@
     line-height: 1.5;
     font-weight: 400;
 
+    --faint-border: #08151f1a !important;
     --white: #fcfff7 !important;
     --black: #08151f !important;
     --text: #08151f !important;
@@ -31,4 +32,5 @@
 
 .constrainer {
     padding: 0 30px;
+    padding-bottom: 88px;
 }

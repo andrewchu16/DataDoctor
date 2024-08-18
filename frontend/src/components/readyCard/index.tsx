@@ -24,7 +24,9 @@ const ReadyCard: React.FC<ReadyCardProps> = ({ appointment }) => {
             </div>
             <div className="ready_card_profile">
                 <img className="ready_card_profile_image" src={defaultPfp} />
-                <span className="ready_card_profile_name">{"asd"}</span>
+                <span className="ready_card_profile_name">
+                    {appointment.patientId}
+                </span>
             </div>
             <Button icon="call" type="primary">
                 Call

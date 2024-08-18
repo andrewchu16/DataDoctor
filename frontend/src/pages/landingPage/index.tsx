@@ -12,6 +12,8 @@ const LandingPage = () => {
                         0,
                         0,
                         0,
+                        0,
+                        0,
                         "asd",
                         "Name",
                         "Virtual",

@@ -22,7 +22,7 @@ const Appointment: React.FC<AppointmentProps> = ({ appointment }) => {
                     With {appointment.doctorId}
                 </span>
                 <span className="appointment_info_description">
-                    {appointment.description}
+                    {appointment.name}
                 </span>
                 <div className="appointment_info_footer">
                     <span className="appointment_info_date">
@@ -30,7 +30,7 @@ const Appointment: React.FC<AppointmentProps> = ({ appointment }) => {
                     </span>
                     &#x2022;
                     <span className="appointment_info_location">
-                        {appointment.location}
+                        {appointment.place}
                     </span>
                 </div>
             </div>
