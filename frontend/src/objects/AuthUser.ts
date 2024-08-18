@@ -1,11 +1,11 @@
 interface AuthUser {
     email: string;
-    accessToken?: string;
+    password: string;
 }
 
 const defaultUser: AuthUser = {
     email: "email@example.com",
-    accessToken: "",
+    password: "password",
 };
 
 export { defaultUser };
