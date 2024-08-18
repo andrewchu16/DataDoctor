@@ -15,9 +15,7 @@ const LandingPage = () => {
                     Bridging families and doctors together.
                 </span>
                 <span className="landing_page_subtitle">
-                    I dunno what to write here guys.
-                    <br />
-                    Please help.
+                    Building Stronger Relationships for Healthier Lives
                 </span>
                 <Button icon="" type="primary">
                     Get Started
