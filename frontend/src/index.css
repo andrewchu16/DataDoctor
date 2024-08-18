@@ -4,16 +4,22 @@
     line-height: 1.5;
     font-weight: 400;
 
-    --background: #fcfff7;
-    --text-gray: #4f5961;
+    --background: #fcfff7 !important;
+    --text: #08151f !important;
+    --text-gray: #4f5961 !important;
 
     font-family: "Open Sans", "Poppins", sans-serif, Inter, system-ui, Avenir,
         Helvetica, Arial;
     color-scheme: light dark;
     background: var(--background);
+    color: var(--text);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.material-symbols-outlined {
+    user-select: none;
 }
