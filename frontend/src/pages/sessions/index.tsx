@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Appointment from "../../components/appointment";
 import { AppointmentData } from "../../objects/AppointmentData";
 import { DialogueData } from "../../objects/DialogueData";
@@ -59,6 +60,15 @@ const appointmentList = [
 ];
 
 const Sessions = () => {
+  useEffect(() => {
+    // remove the active class from all .navbar_items
+    document.querySelectorAll(".navbar_item").forEach((item) => {
+      item.classList.remove("active");
+    });
+    document.querySelector(".navbar_item.sessions")?.classList.add("active");
+
+  }, []);
+
   return (
     <div className="sessions">
       <div className="sessions_top_bar">

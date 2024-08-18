@@ -12,6 +12,7 @@
 }
 
 .navbar_item {
+    text-decoration: none;
     color: var(--tertiary);
     display: flex;
     flex-direction: column;
