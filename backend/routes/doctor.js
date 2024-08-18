@@ -1,25 +1,23 @@
 const express = require("express");
+const {
+  getDoctors,
+  getDoctor,
+  updateDoctor,
+  createDoctor,
+} = require("../controllers/doctorController");
 
 const router = express.Router();
 
 // GET all doctors
-router.get("/", (req, res) => {
-  res.send("GET all doctors");
-});
+router.get("/", getDoctors);
 
 // GET a single doctor
-router.get("/:id", (req, res) => {
-  res.send("GET a single doctor");
-});
+router.get("/:id", getDoctor);
 
-// UPDATE a single patient
-router.patch("/:id", (req, res) => {
-  res.send("UPDATE a single doctor");
-});
+// UPDATE a single doctor
+router.patch("/:id", updateDoctor);
 
 // POST a new doctor
-router.post("/", (req, res) => {
-  res.send("POST a new doctor");
-});
+router.post("/", createDoctor);
 
 module.exports = router;
