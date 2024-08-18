@@ -49,6 +49,14 @@ const appointmentData = new Schema(
     status: {
       type: String,
       required: true
+    },
+    patientId: {
+      type: String,
+      required: true
+    },
+    doctorId: {
+      type: String,
+      required: true
     }
   },
   { timestamps: true }

@@ -8,6 +8,10 @@ const patientSchema = new Schema(
       type: String,
       required: true,
     },
+    password: {
+      type: String,
+      required: true
+    },
     pfp: {
       type: String,
       required: true,
