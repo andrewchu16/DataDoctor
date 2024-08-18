@@ -1,5 +1,7 @@
 import ReadyCard from "../../components/readyCard";
 import { AppointmentData } from "../../objects/AppointmentData";
+import { DialogueData } from "../../objects/DialogueData";
+import "./style.css";
 
 const Home = () => {
     return (
@@ -7,24 +9,28 @@ const Home = () => {
             <div className="home_top_bar">
                 <h1>Hello, </h1>
             </div>
-            <div className="home_get_ready">
+            <div className="section home_get_ready">
+                <div className="section_header">Get Ready</div>
                 <ReadyCard
                     appointment={
                         new AppointmentData(
                             0,
                             0,
                             0,
-                            0,
-                            0,
-                            "Status",
-                            "Desc",
-                            "Virtual"
+                            "asd",
+                            "Name",
+                            "Virtual",
+                            "Summary",
+                            [new DialogueData("0", "Text", 123)],
+                            "Accepted"
                         )
                     }
                 />
             </div>
-            <div className="home_pending"></div>
-            <div className="home_upcoming"></div>
+            <div className="section home_pending">
+                <div className="section_header">Pending Appointments</div>
+            </div>
+            <div className="section home_upcoming"></div>
         </div>
     );
 };
