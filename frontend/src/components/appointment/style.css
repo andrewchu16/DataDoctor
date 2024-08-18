@@ -63,9 +63,6 @@
     font-size: 12px;
     line-height: 12px;
     color: var(--text-gray);
-}
-
-.appointment_info_footer {
     display: flex;
     gap: 3px;
 }

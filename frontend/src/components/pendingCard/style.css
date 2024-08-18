@@ -1,0 +1,46 @@
+.pending_card {
+    border: 1px solid var(--faint-border);
+    padding: 20px 16px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.pending_card_info {
+    flex: 1;
+}
+
+.pending_card_info_doctor {
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--text-gray);
+}
+
+.pending_card_info_description {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+
+.pending_card_info_footer {
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--text-gray);
+}
+
+.pending_card_info_footer {
+    display: flex;
+    gap: 3px;
+}
+
+.pending_card_action {
+    display: flex;
+    gap: 10px;
+}
+
+.pending_card_action > .btn_primary,
+.pending_card_action > .btn_secondary {
+    width: 30px;
+    height: 30px;
+}
