@@ -1,7 +1,7 @@
 import "./style.css";
 
 type InputProps = {
-    type: "text" | "password";
+    type: string;
     placeholder?: string;
 };
 

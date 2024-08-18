@@ -10,6 +10,7 @@
     gap: 8px;
     width: 80%;
     margin: auto;
+    transition: 100ms;
 }
 
 .btn_secondary {
@@ -24,4 +25,10 @@
     gap: 8px;
     width: 80%;
     margin: auto;
+    transition: 100ms;
+}
+
+.btn_primary:active,
+.btn_secondary:active {
+    transform: translateY(3px);
 }
