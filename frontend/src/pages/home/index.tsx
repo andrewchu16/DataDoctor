@@ -5,7 +5,6 @@ import { AppointmentData } from "../../objects/AppointmentData";
 import { DialogueData } from "../../objects/DialogueData";
 import defaultPfp from "../../assets/default.png";
 import "./style.css";
-import Input from "../../components/input";
 
 const appointmentList = [
     new AppointmentData(
