@@ -1,6 +1,7 @@
 import Appointment from "../../components/appointment";
 import Nav from "../../components/nav";
 import { AppointmentData } from "../../objects/AppointmentData";
+import { DialogueData } from "../../objects/DialogueData";
 
 const LandingPage = () => {
     return (
@@ -11,11 +12,12 @@ const LandingPage = () => {
                         0,
                         0,
                         0,
-                        0,
-                        0,
-                        "Status",
-                        "Desc",
-                        "Location"
+                        "asd",
+                        "Name",
+                        "Virtual",
+                        "Summary",
+                        [new DialogueData("0", "Text", 123)],
+                        "Accepted"
                     )
                 }
             />
