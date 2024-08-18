@@ -6,6 +6,7 @@ import { DialogueData } from "../../objects/DialogueData";
 import defaultPfp from "../../assets/default.png";
 import "./style.css";
 import Input from "../../components/input";
+import { useEffect } from "react";
 
 const appointmentList = [
   new AppointmentData(
