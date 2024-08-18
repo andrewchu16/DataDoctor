@@ -1,12 +1,12 @@
-interface User {
+interface AuthUser {
     email: string;
     accessToken?: string;
 }
 
-const defaultUser: User = {
+const defaultUser: AuthUser = {
     email: "email@example.com",
     accessToken: "",
 };
 
 export { defaultUser };
-export type { User };
+export type { AuthUser };

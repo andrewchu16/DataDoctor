@@ -1,16 +1,16 @@
 import { useContext, createContext, ReactNode, useState } from "react";
-import { defaultUser, User } from "../objects/User";
+import { defaultUser, AuthUser } from "../objects/AuthUser";
 
 interface AuthContextType {
     email: string;
     accessToken: string;
     authenticated: boolean;
     ready: boolean;
-    user: User;
+    user: AuthUser;
     setEmail: (email: string) => void;
     setAccessToken: (accessToken: string) => void;
     setAuthenticated: (authenticated: boolean) => void;
-    setUser: (user: User) => void;
+    setUser: (user: AuthUser) => void;
     setReady: (ready: boolean) => void;
 }
 
@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     const [accessToken, setAccessToken] = useState<string>("");
     const [authenticated, setAuthenticated] = useState<boolean>(false);
     const [ready, setReady] = useState<boolean>(false);
-    const [user, setUser] = useState<User>(defaultUser);
+    const [user, setUser] = useState<AuthUser>(defaultUser);
 
     return (
         <AuthContext.Provider
