@@ -13,13 +13,14 @@ const ReadyCard: React.FC<ReadyCardProps> = ({ appointment }) => {
             <span className="ready_card_title">{appointment.name}</span>
             <div className="ready_card_subtitle">
                 <span className="ready_card_start">
-                    {appointment.startTime}
+                    {new Date(appointment.startTime).toLocaleTimeString()}
                 </span>
                 &#x2022;
                 <span className="ready_card_location">{appointment.place}</span>
                 &#x2022;
                 <span className="ready_card_duration">
-                    {appointment.endTime - appointment.startTime}.
+                    {(appointment.endTime - appointment.startTime) / 1000}
+                    {" mins"}
                 </span>
             </div>
             <div className="ready_card_profile">

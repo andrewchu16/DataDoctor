@@ -20,7 +20,7 @@ const PendingCard: React.FC<PendingCardProps> = ({ appointment }) => {
                 </span>
                 <div className="pending_card_info_footer">
                     <span className="pending_card_info_time">
-                        {appointment.startTime}
+                        {new Date(appointment.startTime).toLocaleTimeString()}
                     </span>
                     &#x2022;
                     <span className="pending_card_info_location">
@@ -28,7 +28,8 @@ const PendingCard: React.FC<PendingCardProps> = ({ appointment }) => {
                     </span>
                     &#x2022;
                     <span className="pending_card_info_duration">
-                        {appointment.endTime - appointment.startTime}
+                        {(appointment.endTime - appointment.startTime) / 10000}{" "}
+                        {" mins"}
                     </span>
                 </div>
             </div>
