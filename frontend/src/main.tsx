@@ -10,6 +10,7 @@ import Profile from "./pages/profile/index.tsx";
 import SignUp from "./pages/signUp/index.tsx";
 import Layout from "./components/layout/index.tsx";
 import PrivateRoute from "./components/privateRoute/index.tsx";
+import LogIn from "./pages/logIn/index.tsx";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -22,7 +23,8 @@ createRoot(document.getElementById("root")!).render(
                 <div className="constrainer">
                     <Routes>
                         <Route path="/" element={<LandingPage />} />
-                        <Route path="/sign-up" element={<SignUp />} />
+                        <Route path="/signup" element={<SignUp />} />
+                        <Route path="/login" element={<LogIn />} />
                         {/* <Route element={<PrivateRoute />}> */}
                         <Route element={<Layout />}>
                             <Route path="/home" element={<Home />} />
