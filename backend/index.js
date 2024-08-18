@@ -2,7 +2,10 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
-const workoutRoutes = require("./routes/workouts");
+
+const doctorRoutes = require("./routes/doctor");
+const patientRoutes = require("./routes/patient");
+const appointmentRoutes = require("./routes/appointment");
 
 // Initialize Express app.
 const app = express();
@@ -16,7 +19,9 @@ app.use((req, res, next) => {
 }); // Logger
 
 // Routes
-app.use("/api/workouts", workoutRoutes);
+app.use("/api/doctors", doctorRoutes);
+app.use("/api/patients", patientRoutes);
+app.use("/api/appointments", appointmentRoutes);
 
 // Connect to MongoDB
 mongoose
