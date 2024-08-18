@@ -13,20 +13,7 @@ const appointmentList = [
     0,
     0,
     0,
-    0,
-    0,
-    "asd",
-    "Name",
-    "Virtual",
-    "Summary",
-    [new DialogueData("0", "Text", 123)],
-    "Accepted"
-  ),
-  new AppointmentData(
-    0,
-    0,
-    0,
-    0,
+    Math.floor((Date.now() + 35000) / 1000),
     0,
     "asd",
     "Name",
@@ -39,7 +26,7 @@ const appointmentList = [
     0,
     0,
     0,
-    0,
+    Math.floor((Date.now() + 39820) / 1000),
     0,
     "asd",
     "Name",
@@ -52,7 +39,20 @@ const appointmentList = [
     0,
     0,
     0,
+    Math.floor((Date.now() + 550232) / 1000),
     0,
+    "asd",
+    "Name",
+    "Virtual",
+    "Summary",
+    [new DialogueData("0", "Text", 123)],
+    "Accepted"
+  ),
+  new AppointmentData(
+    0,
+    0,
+    0,
+    Math.floor((Date.now() + 87230) / 1000),
     0,
     "asd",
     "Name",
@@ -63,7 +63,21 @@ const appointmentList = [
   ),
 ];
 
-const appointment = new AppointmentData(
+const currentAppointment = new AppointmentData(
+  0,
+  0,
+  0,
+  Math.floor((Date.now() + 85000) / 1000),
+  0,
+  "asd",
+  "Name",
+  "Virtual",
+  "Summary",
+  [new DialogueData("0", "Text", 123)],
+  "Accepted"
+);
+
+const pendingAppointment = new AppointmentData(
   0,
   0,
   0,
@@ -89,17 +103,17 @@ const Home = () => {
     <div className="home">
       <div className="home_top_bar">
         <span className="home_top_bar_greet">
-          Hello, <b>{appointment.patientId}</b>
+          Hello, <b>Carla</b>
         </span>
         <img className="home_top_bar_profile" src={defaultPfp} />
       </div>
       <div className="section home_get_ready">
         <div className="section_header">Get Ready</div>
-        <ReadyCard appointment={appointment} />
+        <ReadyCard appointment={currentAppointment} />
       </div>
       <div className="section home_pending">
         <div className="section_header">Pending Appointments</div>
-        <PendingCard appointment={appointment} />
+        <PendingCard appointment={pendingAppointment} />
       </div>
       <div className="section home_upcoming">
         <div className="section_header">Upcoming Appointment</div>
