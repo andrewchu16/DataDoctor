@@ -8,9 +8,10 @@ import Home from "./pages/home/index.tsx";
 import PageNotFound from "./pages/pageNotFound/index.tsx";
 import Profile from "./pages/profile/index.tsx";
 import SignUp from "./pages/signUp/index.tsx";
+import LogIn from "./pages/logIn/index.tsx";
 import Layout from "./components/layout/index.tsx";
 import PrivateRoute from "./components/privateRoute/index.tsx";
-import LogIn from "./pages/logIn/index.tsx";
+import Sessions from "./pages/sessions/index.tsx";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -29,6 +30,7 @@ createRoot(document.getElementById("root")!).render(
                         <Route element={<Layout />}>
                             <Route path="/home" element={<Home />} />
                             <Route path="/profile" element={<Profile />} />
+                            <Route path="/sessions" element={<Sessions />} />
                         </Route>
                         {/* </Route> */}
                         <Route path="*" element={<PageNotFound />} />

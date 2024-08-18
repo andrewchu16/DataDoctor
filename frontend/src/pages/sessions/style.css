@@ -1,0 +1,31 @@
+.sessions_top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.sessions_top_bar_greet {
+    font-size: 28px;
+}
+
+.sessions_top_bar_profile {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.section {
+    margin-bottom: 36px;
+}
+
+.section_header {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.appointment_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
