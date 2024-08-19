@@ -1,0 +1,66 @@
+.log_in_content {
+    margin-top: 125px;
+}
+
+.log_in_title {
+    font-size: 32px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.log_in_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.log_in_fields > * {
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.log_in_content > .btn_primary {
+    border-radius: 15px;
+    width: 100%;
+    height: 50px;
+    line-height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.log_in_signup {
+    color: var(--primary);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.log_in_signup > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.log_in_art {
+    position: fixed;
+    z-index: -1;
+}
+
+.topright {
+    top: 0;
+    right: 0;
+}
+
+.left {
+    top: 150px;
+    left: 0;
+}
+
+.bottomright {
+    bottom: 0;
+    right: 0;
+}

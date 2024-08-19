@@ -1,0 +1,34 @@
+.btn_primary {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 80%;
+    margin: auto;
+    transition: 100ms;
+}
+
+.btn_secondary {
+    background: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 80%;
+    margin: auto;
+    transition: 100ms;
+}
+
+.btn_primary:active,
+.btn_secondary:active {
+    transform: translateY(3px);
+}
