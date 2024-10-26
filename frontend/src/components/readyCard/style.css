@@ -1,0 +1,40 @@
+.ready_card {
+    box-shadow: var(--general-box-shadow);
+    border-radius: 30px;
+    padding: 24px 36px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.ready_card_title {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.ready_card_subtitle {
+    font-size: 12px;
+    color: var(--text-gray);
+    display: flex;
+    gap: 3px;
+}
+
+.ready_card_profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.ready_card_profile_image {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+}
+
+.ready_card_profile_name {
+    font-size: 16px;
+}

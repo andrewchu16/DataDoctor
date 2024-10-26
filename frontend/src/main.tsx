@@ -8,8 +8,11 @@ import Home from "./pages/home/index.tsx";
 import PageNotFound from "./pages/pageNotFound/index.tsx";
 import Profile from "./pages/profile/index.tsx";
 import SignUp from "./pages/signUp/index.tsx";
+import LogIn from "./pages/logIn/index.tsx";
 import Layout from "./components/layout/index.tsx";
 import PrivateRoute from "./components/privateRoute/index.tsx";
+import Sessions from "./pages/sessions/index.tsx";
+import Schedule from "./pages/schedule/index.tsx";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -19,17 +22,22 @@ createRoot(document.getElementById("root")!).render(
         />
         <BrowserRouter>
             <AuthProvider>
-                <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/sign-up" element={<SignUp />} />
-                    <Route element={<PrivateRoute />}>
+                <div className="constrainer">
+                    <Routes>
+                        <Route path="/" element={<LandingPage />} />
+                        <Route path="/signup" element={<SignUp />} />
+                        <Route path="/login" element={<LogIn />} />
+                        {/* <Route element={<PrivateRoute />}> */}
                         <Route element={<Layout />}>
                             <Route path="/home" element={<Home />} />
                             <Route path="/profile" element={<Profile />} />
+                            <Route path="/sessions" element={<Sessions />} />
+                            <Route path="/schedule" element={<Schedule />} />
                         </Route>
-                    </Route>
-                    <Route path="*" element={<PageNotFound />} />
-                </Routes>
+                        {/* </Route> */}
+                        <Route path="*" element={<PageNotFound />} />
+                    </Routes>
+                </div>
             </AuthProvider>
         </BrowserRouter>
     </StrictMode>

@@ -1,15 +1,15 @@
-.home_top_bar {
+.sessions_top_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 28px;
 }
 
-.home_top_bar_greet {
+.sessions_top_bar_greet {
     font-size: 28px;
 }
 
-.home_top_bar_profile {
+.sessions_top_bar_profile {
     width: 46px;
     height: 46px;
     border-radius: 50%;

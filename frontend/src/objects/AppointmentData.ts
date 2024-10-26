@@ -1,3 +1,5 @@
+import { DialogueData } from "./DialogueData";
+
 export class AppointmentData {
     constructor(
         public id: number,
@@ -5,8 +7,11 @@ export class AppointmentData {
         public patientId: number,
         public startTime: number,
         public endTime: number,
-        public status: string,
-        public description: string,
-        public location: string
+        public audioData: string, // base64 encoded
+        public name: string,
+        public place: "Virtual" | "In-person",
+        public summary: string,
+        public transcript: DialogueData[],
+        public status: "Pending" | "Accepted" | "Rejected"
     ) {}
 }

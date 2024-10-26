@@ -8,6 +8,12 @@ type AppointmentProps = {
 const colorList = ["purple", "turquoise", "yellow"];
 
 const Appointment: React.FC<AppointmentProps> = ({ appointment }) => {
+    const formatDate = (date: string): string => {
+        const options = { day: '2-digit', month: 'short' };
+        const formattedDate = new Date(date).toLocaleDateString('en-US', options);
+        return formattedDate;
+    };
+
     return (
         <div className="appointment">
             <div
@@ -22,15 +28,15 @@ const Appointment: React.FC<AppointmentProps> = ({ appointment }) => {
                     With {appointment.doctorId}
                 </span>
                 <span className="appointment_info_description">
-                    {appointment.description}
+                    {appointment.name}
                 </span>
                 <div className="appointment_info_footer">
                     <span className="appointment_info_date">
-                        {appointment.startTime}
+                        {formatDate(appointment.startTime)}
                     </span>
                     &#x2022;
                     <span className="appointment_info_location">
-                        {appointment.location}
+                        {appointment.place}
                     </span>
                 </div>
             </div>
